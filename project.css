@@ -95,6 +95,46 @@ header .logo{
 header .logo span{
     color:#faa467;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    font-size: 1.09rem;
+    color: #42692c;
+    text-decoration: none;
+    padding: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1001;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+  }
+  .dropdown-content a {
+    color: #42692c;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f5d1b757;
+    color: #f3c4a2;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
 header .navbar a{
     font-size: 2rem;
     padding: 0 3.5rem;
