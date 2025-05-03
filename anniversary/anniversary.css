@@ -1,0 +1,324 @@
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+header{
+  position: fixed;
+  top:0; left: 0; right: 0;
+  background: #f6f1e1;
+  padding: 1.3rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(255, 216, 216, 0.1)
+  }
+  .buttons{
+      gap: 1rem;
+      display: flex;
+  }
+  
+  .btn1,.btn2{
+      display:inline-block;
+      text-decoration: none;
+      text-align: center;
+      font-size: .6rem;
+      padding: .6rem .6rem;
+      border-radius: 5rem;
+      text-align: center;
+  }
+  .btn1{
+      background: #3a6e3c;
+      color: #f6f1e1;
+  }
+  .btn1:hover{
+  color:#f1ab79;
+  }
+  .btn2{
+      background: #ebc3a7;
+      color: #527e3b;
+  }
+  .btn2:hover{
+      color: #f9eadf;}
+  
+  
+      .cart-icon{
+          color:#42692c;
+          padding-left: 2.5rem;
+          font-size: 1.6rem;
+          cursor:pointer;
+      }
+  
+  .cart-icon:hover{
+      color: #ebc3a7; 
+  }
+  .cart-count{
+      position: absolute;
+      right:6rem;
+      background: red;
+      color: #f6f1e1;
+      border-radius: 50%;
+      padding: .2rem .4rem;
+      font-size: .8rem;
+      top:.6rem;
+  }
+  
+  
+  
+  
+  header .logo{
+      font-size: 2.2rem;
+      color: #527e3b;
+      font-weight: bolder;
+  }
+  header .logo span{
+      color:#faa467;
+  }
+  .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropbtn {
+      font-size: 1.09rem;
+      color: #42692c;
+      text-decoration: none;
+      padding: 0;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+      z-index: 1001;
+      border-radius: 0.5rem;
+      padding: 0.5rem 0;
+    }
+    .dropdown-content a {
+      color: #42692c;
+      padding: .5rem 1.5rem;
+      text-decoration: none;
+      display: block;
+      white-space: nowrap;
+      transition: 0.3s ease;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #f5d1b757;
+      color: #f3c4a2;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  
+  header .navbar a{
+      font-size: 1.2rem;
+      padding: 0 2.5rem;
+      color: #42692c;
+      font-family:serif;
+  }
+      header .navbar a:hover{
+      color:#ffa463;
+      }
+  
+h1{
+  font-family: cursive , Times, serif;
+  color: #111310;
+  font-size: 2.5rem;
+  text-align: 50%;
+  padding-top: 5px;
+  margin-top: 100px;
+  text-align: center;
+} 
+.p1{
+  font-family:  'Pacifico', cursive;
+  color: #1f251c;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  margin-top: .2px;
+}
+.head{
+    text-align: center;
+    padding-top:2px;
+    padding-bottom: 30px;
+    font-size: 2rem; 
+    text-shadow: 2px 2px 6px rgba(255, 105, 180, 0.4); /* pink shadow */
+  }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /*the same of the height of the navbar*/
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  font-size: medium;
+
+}
+@media(max-width: 768px){
+  html{
+    font-size: 50%;
+  }
+  header{
+    padding: 2rem;
+  }
+  .head h1{
+    font-size: 1.5rem;
+    margin-top: 8rem;
+  }
+  .p1{
+    font-size: 1rem;
+    margin-top: .2rem;
+  }
+  .product {
+    flex: 0 1 calc(50% - 20px);
+    min-height: 50vh;
+  }
+  header .fa-bars{
+    display: block;
+  }
+  header.navbar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background: #ffd6c5;
+    border-top: 1rem solid rgb(105, 148, 97);
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+  }
+  header.navbar a{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #ffd6c5;
+    border: 1rem solid #69b361;
+    display: block;
+  }
+  }
+@media (max-width: 480px) {
+  html{
+    font-size: 50%;
+  }
+  header{
+    padding: 2rem;
+  }
+  .head h1{
+    font-size: 1.5rem;
+  }
+  .p1{
+    font-size: 1rem;
+  }
+  .product {
+    flex: 1 1 100%; 
+    min-height: 50vh;
+  }
+}
+
+.products-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  border: 1px solid #FFFFFF;
+}
+.product{
+  flex: 1 1 calc(33.33% - 20px);
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(160, 110, 110, 0.836);
+  background-color: #f7eee3;
+  min-height: 50vh;
+}
+.product-image {
+  width:80%;
+  /* max-width:300px;
+   height:300px;*/
+   aspect-ratio: 1 / 1;
+   object-fit: cover; 
+   border-radius: 10px; 
+   
+ }
+.product-info {
+  margin-top: 10px;
+  font-family: 'Pacifico', cursive;
+}
+.product-name {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.product-description {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #527e3b;
+  line-height: 1.5;
+}
+.product-price{
+  font-weight: bold;
+  color: #3b3737;
+}
+
+.buy-now {
+  margin-bottom: 20px;
+  background-color: #527e3b;
+  color: #FFFFFF ;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}/*#FF69B4 pink,#4CAF50 green clear,#006400 green  */
+.add-to-cart {
+  margin-bottom: 20px;
+  background-color: #527e3b;
+  color: #FFFFFF ;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer{
+  background-image:url(footer.jpeg) ;
+  background-size: cover;
+  background-position:center ;
+  background-repeat: no-repeat;
+  padding: 25px;
+  position: relative;
+  color:#f18f65;
+  text-align: center;
+  }
+  .footer::before{
+     content: none;
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(0, 0, 0 / 70%);
+  }
+  .footer .container{
+     position: relative;}
+ .footer p:not(.copyright){
+     text-transform: uppercase;
+     padding: 10px;
+     border-bottom: 2px solid rgb(38, 80, 38);
+     font-size: 18px;
+     width: fit-content;
+     margin: 10px auto;
+ }
+ .footer .Social-icons i{
+     padding: 15px 10px;
+     font-size: 15px;
+ }
+ 
+ .footer .copyright span{
+     font-weight: bold;
+     color: #42692c;
+ 
+ }
+ 
