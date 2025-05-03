@@ -1,0 +1,157 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color:#ffffff;
+
+}
+
+  .banner {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: 65px;
+    width: 97%;
+    height: auto;
+    background-color: #f5d1b7a4;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .banner h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    color: #416130;
+    margin-bottom: 10px; 
+  
+  }
+  
+  .banner h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    color: #000000;
+    margin-top: 0; 
+  }
+.main {
+  max-width: 1330px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 30px; 
+  padding: 40px;
+  border: 1px rgba(146, 146, 146, 0) solid;
+}
+.box{
+  height: 480px;
+  width: 280px;
+  background-color: white;
+  border: 3px #93a38a  solid;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s ease-in-out; 
+  position: relative;
+}
+
+.img{
+  width: 270px;
+  height: 270px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.divider{
+  width:260px;
+  height: 3px;
+  background-color: #93a38a;
+  display: inline-block;
+  margin-top: 10px;
+}
+.info{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 15px;
+  text-align: left;
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+.price{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 23px;
+  margin-left: 15px;
+  text-align: left;
+}
+ .buy-Button{
+  display: inline-block;
+  background-color: #53793e;
+  border: #53793e 2px solid ;
+  color: white;
+  padding: 9px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  transition: 0.3s ease;
+  
+ }
+ 
+.addToCart-Button{
+  display: inline-block;
+  background-color: #ffffff;
+  border: #53793e 2px solid ;
+  color: #53793e;
+  padding: 9px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  transition:0.3s ease;
+ 
+ }
+ .buy-Button:hover {
+  background-color: #344e25;
+  transform: scale(1.05);     
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+
+}.addToCart-Button:hover {
+  background-color: #344e25;
+  color: white;
+  transform: scale(1.05);     
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+  transform: scale(1.04); 
+  border-color: #637757 ;
+  background-color: #f6f1e1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.144); 
+
+}
+.buttons{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+/*-------------------------*/
+ @media(max-width:950px){
+  .banner {
+    margin-top: 75px;
+  }
+  .banner h1 {
+    font-size: 58px;
+  }
+  .banner h2 {
+    font-size: 21px; 
+  }
+}
+@media(max-width:850px){
+  .banner h1 {
+    font-size: 54px;
+    margin-top:30px;
+  }
+  .banner h2 {
+    font-size: 17px; 
+  }
+
+} 
