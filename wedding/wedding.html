@@ -4,12 +4,10 @@
         <title> westren flowers</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="wedding.css"> 
-        <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
-                    /*---------header----------*/
+                    <!-- /*---------header----------*/ -->
         <header>
             <a href="#" class="logo"> Flower <span>*  </span></a>
             <nav class="navbar">
@@ -31,7 +29,7 @@
              <div class="headerBTN">
                 <a href="login.html" class="btn1"> Log in</a>
                 <a href="sign up.html" class="btn2">Sign up</a>  
-                <div  class="cart-icon" onclick="addtocart()">
+                <div  class="cart-icon" >
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count" id="cart-count">0</span>
                 </div>
@@ -48,7 +46,8 @@
             </script>
         
         </header> 
-                    /*--------------------------------------*/
+                    <!-- /*--------------------------------------*/ -->
+                     
         <div class="banner">
             <h1><b>wedding bouquet</b></h1>
             <h2>Find Your Perfect Wedding Bouquet for Your Special Day !</h2>
@@ -61,7 +60,10 @@
                     <p class="price"><b>EGP 1800</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button"
+                        data-name="White tulip bouquet with a silver pearl handle"
+                        data-price="1800" 
+                        data-image="flower/f (20).jpg">Add to cart</button>
                     </div>
                 </div>
                 <div class="box">
@@ -71,7 +73,10 @@
                     <p class="price"><b>EGP 2100</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name=" Elegant pearl bridal bouquet"
+                        data-price="2100" 
+                        data-image="flower/f (6).jpg">Add to cart</button>
                     </div>
                 </div>
                 <div class="box">
@@ -81,7 +86,10 @@
                     <p class="price"><b>EGP 1650</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="Chic White rose bouquet"
+                        data-price="1650" 
+                        data-image="flower/f (1).jpg" >Add to cart</button>
                     </div>   
                 </div>
                 <div class="box">
@@ -91,7 +99,10 @@
                     <p class="price"><b>EGP 1300</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="Simple and classic white roses bouquet"
+                        data-price="1300" 
+                        data-image="flower/f (11).jpg">Add to cart</button>
                     </div>
                 </div>
             
@@ -102,7 +113,10 @@
                     <p class="price"><b>EGP 2100</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="Elegant white tulip bouquet"
+                        data-price="2100" 
+                        data-image="flower/f (3).jpg" >Add to cart</button>
                     </div>
                 </div> 
                 <div class="box">
@@ -112,7 +126,10 @@
                     <p class="price"><b>EGP 1100</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="Simple white & orange peonies bouquet"
+                        data-price="1100" 
+                        data-image="flower/f (2).jpg">Add to cart</button>
                     </div>    
                 </div>
                 <div class="box">
@@ -122,7 +139,10 @@
                     <p class="price"><b>EGP 1650</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="Simple white tulip bouquet"
+                        data-price="1650" 
+                        data-image="flower/f (9).jpg">Add to cart</button>
                     </div>    
                 </div>
                 <div class="box">
@@ -132,7 +152,10 @@
                     <p class="price"><b>EGP 1500</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="Delicate white bouquet with soft beige accents and pearls"
+                        data-price="1500" 
+                        data-image="flower/f (12).jpg" >Add to cart</button>
                     </div>
                 </div>
            
@@ -143,18 +166,24 @@
                     <p class="price"><b>EGP 1830</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="White tulip bouquet with natural beige highlights"
+                        data-price="1830" 
+                        data-image="flower/f (5).jpg">Add to cart</button>
                     </div>
                 </div> 
                 <div class="box">
-                    <img class="img" src="flower/f (14).jpg">
+                    <img class="img" src="flower/f (7).jpg">
                     <div class="divider"></div>
-                    <P class="info"> <i>Classic round ivory flowers bouquet</i></P>
-                    <p class="price"><b>EGP 1700</b></p>
+                    <P class="info"> <i>White lily bouquet with pearls <br>and crystal handle</i></P>
+                    <p class="price"><b>EGP 2850</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
-                    </div>
+                        <button class="addToCart-Button"
+                        data-name="White lily bouquet with pearls"
+                        data-price="2850" 
+                        data-image="flower/f (7).jpg" >Add to cart</button>
+                    </div>    
                 </div>
                 <div class="box">
                     <img class="img" src="flower/f (18).jpg">
@@ -163,7 +192,10 @@
                     <p class="price"><b>EGP 3150</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="Chic bunch of fresh white tulips"
+                        data-price="3150" 
+                        data-image="flower/f (18).jpg">Add to cart</button>
                     </div>    
                 </div>
                 <div class="box">
@@ -173,32 +205,17 @@
                     <p class="price"><b>EGP 2500</b></p>
                     <div class="buttons">
                         <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
+                        <button class="addToCart-Button" 
+                        data-name="Natural white tulips with rustic brown touches"
+                        data-price="2500" 
+                        data-image="flower/f (19).jpg">Add to cart</button>
                     </div>
                 </div>
-                <div class="box">
-                    <img class="img" src="flower/f (7).jpg">
-                    <div class="divider"></div>
-                    <P class="info"> <i>White lily bouquet with pearls <br>and crystal handle</i></P>
-                    <p class="price"><b>EGP 2850</b></p>
-                    <div class="buttons">
-                        <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
-                    </div>    
-                </div>
-                <div class="box">
-                    <img class="img" src="flower/f (10).jpg">
-                    <div class="divider"></div>
-                    <P class="info"> <i>Simple white baby's breath bouquet with black ribbon</i></P>
-                    <p class="price"><b>EGP 1990</b></p>
-                    <div class="buttons">
-                        <a class="buy-Button" href="shopping_cart.html" >Buy now</a>
-                        <a class="addToCart-Button" href="shopping_cart.html" >Add to cart</a>
-                    </div>    
-                </div>  
+                
+              
         </div>
 
-                /*-------footer-----------*/
+                <!-- /*-------footer-----------*/ -->
 
         <div class="footer">
             <div class="container">
@@ -213,6 +230,53 @@
               </div>
         </div>
 
-        
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            updateCartCount();
+
+    
+            const addToCartButtons = document.querySelectorAll(".addToCart-Button");
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const product = {
+                        name: button.dataset.name,
+                        price: parseFloat(button.dataset.price),
+                        image: button.dataset.image
+                    };
+
+                    addToCart(product);
+                    updateCartCount();  
+                });
+            });
+            });
+
+
+            const addToCart = (product) => {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cart.push(product);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("Product Added To Cart!");
+            };
+
+            const buyNowButtons = document.querySelectorAll(".buy-Button");
+            buyNowButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const product = {
+                        name: button.dataset.name,
+                        price: parseFloat(button.dataset.price),
+                        image: button.dataset.image
+                    };
+
+                    addToCart(product);       
+                    updateCartCount();        
+                    window.location.href = "cart.html";
+                });
+            });
+
+            const updateCartCount = () => {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                document.querySelector('.cart-count').textContent = cart.length;
+            };
+    </script>
     </body>
 </html>

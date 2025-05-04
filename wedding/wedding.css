@@ -1,3 +1,155 @@
+/* ---------------------header------------------------ */
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #f6f1e1;
+  padding: 1rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .3rem .8rem rgba(255, 216, 216, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  flex-wrap: wrap ;
+}
+
+header .logo {
+  font-size: 2.4rem;
+  color: #527e3b;
+  font-weight: bold;
+  text-decoration:none;
+}
+
+header .logo span {
+  color: #faa467;
+}
+
+.navbar {
+  display: flex;
+  gap: 2.5rem;
+}
+
+header .navbar a {
+  font-size: 1.09rem;
+  color: #42692c;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+header .navbar a:hover {
+  color: #ffa463;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn1, .btn2 {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 5rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn1 {
+  background: #578e4e;
+  color: #ffe4c6;
+}
+
+.btn1:hover {
+  color: #f6f1e1;
+}
+
+.btn2 {
+  background: #f3c4a2;
+  color: #527e3b;
+}
+
+.btn2:hover {
+  color: #f6f1e1;
+}
+.headerBTN{
+  display: flex;
+  gap: 22px;
+}
+
+
+          /* dropdown */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-size: 1.09rem;
+  color: #42692c;
+  text-decoration: none;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  z-index: 1001;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.dropdown-content a {
+  color: #42692c;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease;
+  white-space:nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5d1b757;
+  color: #f3c4a2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+       /*    cart icon   */
+
+.cart-icon{
+  color: #42692c;
+  padding-left: 40px;
+  font-size: 25px;
+  cursor:pointer;
+  position:relative;
+}
+
+.cart-icon:hover{
+color: #ebc3a7;
+}
+.cart-count{
+background: red;
+color: #f6f1e1;
+border-radius: 50%;
+padding: 3px 6px;
+font-size: 11px;
+top:1.2rem;
+position: absolute;
+top: -13px;
+right: -13px
+}
+
+/* ----------------header ends here------------------------- */
+
+
 *{
   margin: 0px;
   padding: 0px;
@@ -78,8 +230,10 @@ body{
 .price{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 23px;
-  margin-left: 15px;
   text-align: left;
+  position:absolute;
+  left: 15px;
+  bottom: 90px;
 }
  .buy-Button{
   display: inline-block;
@@ -133,7 +287,55 @@ body{
   bottom: 30px;
   left: 30px;
 }
-/*-------------------------*/
+
+/* -------------------------------footer------------------------------ */
+
+.footer{
+  background-image:url(flower/footer.jpg) ;
+  background-size: cover;
+  background-position:center ;
+  background-repeat: no-repeat;
+  padding: 25px;
+  position: relative;
+  color:#f18f65;
+  text-align: center;
+  }
+  .footer::before{
+     content: none;
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(0, 0, 0 / 70%);
+  }
+  .footer .container{
+     position: relative;}
+ .footer p:not(.copyright){
+     text-transform: uppercase;
+     padding: 10px;
+     border-bottom: 2px solid rgb(38, 80, 38);
+     font-size: 18px;
+     width: fit-content;
+     margin: 10px auto;
+ }
+ .footer .Social-icons i{
+     padding: 15px 10px;
+     font-size: 15px;
+ }
+ 
+ .footer .copyright span{
+     font-weight: bold;
+     color: #42692c;
+ 
+ }
+
+
+/* -------------------------footer ends here-------------------------------- */
+
+
+/*------------------------media-------------------------*/
+
  @media(max-width:950px){
   .banner {
     margin-top: 75px;
@@ -144,6 +346,14 @@ body{
   .banner h2 {
     font-size: 21px; 
   }
+  header .logo {
+    font-size: 2rem;
+           
+  }
+  .navbar {
+      gap: 1.8rem;
+  }
+
 }
 @media(max-width:850px){
   .banner h1 {
@@ -153,5 +363,16 @@ body{
   .banner h2 {
     font-size: 17px; 
   }
-
-} 
+  .btn1, .btn2 {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    font-weight: 400; 
+  }
+  .headerBTN{
+      gap:10px;
+  }
+  .navbar {
+      gap: 1rem;
+  }
+}
