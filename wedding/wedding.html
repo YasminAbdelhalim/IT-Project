@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> westren flowers</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="wedding.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+                    <!-- /*---------header----------*/ -->
+        <header>
+            <a href="home.html" class="logo"> Flower <span>*  </span></a>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <div class="dropdown">
+                    <a href="#category" class="dropbtn">Category</a>
+                    <div class="dropdown-content">
+                      <a href="wedding.html">Wedding Flowers</a>
+                      <a href="anniversary.html" >Anniversary Flowers</a>
+                      <a href="congratulatory.html">Congratulatory Flowers</a>
+                      <a href="just for.html">Just for flowers</a>
+                      <a href="satin.html">Satin Flowers</a>
+                    </div>
+                  </div>
+                  
+                <a href="contact.html">Contact us</a>
+                <a href="about.html">About</a>
+            </nav>
+             <div class="headerBTN">
+                <a href="login.html" class="btn1"> Log in</a>
+                <a href="sign up.html" class="btn2">Sign up</a>  
+                <a class="cart-icon" href="cart.html"> <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span></a>
+            </div> 
+
+            <script>
+
+                let cartcount =0;
+                function addtocart(){
+                    cartcount++;
+                    document.getElementById('cart-count').textContent=cartcount;
+            
+                }
+            </script>
+        
+        </header> 
+                    <!-- /*--------------------------------------*/ -->
+                     
+        <div class="banner">
+            <h1><b>wedding bouquet</b></h1>
+            <h2>Find Your Perfect Wedding Bouquet for Your Special Day !</h2>
+        </div>
+        <div class="main">
+                <div class="box">
+                    <img class="img" src="flower/f (20).jpg">
+                    <div class="divider"></div>
+                    <p class="info"> <i>White tulip bouquet with a silver pearl handle</i></p>
+                    <p class="price"><b>EGP 1800</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="White tulip bouquet with a silver pearl handle"
+                        data-price="1800" 
+                        data-image="flower/f (20).jpg">Buy now</a>
+                        <button class="addToCart-Button"
+                        data-name="White tulip bouquet with a silver pearl handle"
+                        data-price="1800" 
+                        data-image="flower/f (20).jpg">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="img" src="flower/f (6).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i> Elegant pearl bridal bouquet</i></P>
+                    <p class="price"><b>EGP 2100</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html"
+                        data-name=" Elegant pearl bridal bouquet"
+                        data-price="2100" 
+                        data-image="flower/f (6).jpg" >Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name=" Elegant pearl bridal bouquet"
+                        data-price="2100" 
+                        data-image="flower/f (6).jpg">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="img" src="flower/f (1).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>Chic White rose bouquet </i></P>
+                    <p class="price"><b>EGP 1650</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="Chic White rose bouquet"
+                        data-price="1650" 
+                        data-image="flower/f (1).jpg">Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="Chic White rose bouquet"
+                        data-price="1650" 
+                        data-image="flower/f (1).jpg" >Add to cart</button>
+                    </div>   
+                </div>
+                <div class="box">
+                    <img class="img" src="flower/f (11).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>Simple and classic white roses bouquet</i></P>
+                    <p class="price"><b>EGP 1300</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="Simple and classic white roses bouquet"
+                        data-price="1300" 
+                        data-image="flower/f (11).jpg">Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="Simple and classic white roses bouquet"
+                        data-price="1300" 
+                        data-image="flower/f (11).jpg">Add to cart</button>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <img class="img" src="flower/f (3).jpg">
+                    <div class="divider"></div>
+                    <P class="info"><i>Elegant white tulip bouquet </i></P>
+                    <p class="price"><b>EGP 2100</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html"
+                        data-name="Elegant white tulip bouquet"
+                        data-price="2100" 
+                        data-image="flower/f (3).jpg" >Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="Elegant white tulip bouquet"
+                        data-price="2100" 
+                        data-image="flower/f (3).jpg" >Add to cart</button>
+                    </div>
+                </div> 
+                <div class="box">
+                    <img class="img" src="flower/f (2).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>Simple white & orange peonies bouquet</i></P>
+                    <p class="price"><b>EGP 1100</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="Simple white & orange peonies bouquet"
+                        data-price="1100" 
+                        data-image="flower/f (2).jpg">Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="Simple white & orange peonies bouquet"
+                        data-price="1100" 
+                        data-image="flower/f (2).jpg">Add to cart</button>
+                    </div>    
+                </div>
+                <div class="box">
+                    <img class="img" src="flower/f (9).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>Simple white tulip bouquet</i></P>
+                    <p class="price"><b>EGP 1650</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="Simple white tulip bouquet"
+                        data-price="1650" 
+                        data-image="flower/f (9).jpg">Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="Simple white tulip bouquet"
+                        data-price="1650" 
+                        data-image="flower/f (9).jpg">Add to cart</button>
+                    </div>    
+                </div>
+                <div class="box">
+                    <img class="img" src="flower/f (12).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>Delicate white bouquet with soft beige accents and pearls</i></P>
+                    <p class="price"><b>EGP 1500</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="Delicate white bouquet with soft beige accents and pearls"
+                        data-price="1500" 
+                        data-image="flower/f (12).jpg" >Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="Delicate white bouquet with soft beige accents and pearls"
+                        data-price="1500" 
+                        data-image="flower/f (12).jpg" >Add to cart</button>
+                    </div>
+                </div>
+           
+                <div class="box">
+                    <img class="img" src="flower/f (5).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>White tulip bouquet with natural beige highlights</i></P>
+                    <p class="price"><b>EGP 1830</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="White tulip bouquet with natural beige highlights"
+                        data-price="1830" 
+                        data-image="flower/f (5).jpg">Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="White tulip bouquet with natural beige highlights"
+                        data-price="1830" 
+                        data-image="flower/f (5).jpg">Add to cart</button>
+                    </div>
+                </div> 
+                <div class="box">
+                    <img class="img" src="flower/f (7).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>White lily bouquet with pearls <br>and crystal handle</i></P>
+                    <p class="price"><b>EGP 2850</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="White lily bouquet with pearls"
+                        data-price="2850" 
+                        data-image="flower/f (7).jpg">Buy now</a>
+                        <button class="addToCart-Button"
+                        data-name="White lily bouquet with pearls"
+                        data-price="2850" 
+                        data-image="flower/f (7).jpg" >Add to cart</button>
+                    </div>    
+                </div>
+                <div class="box">
+                    <img class="img" src="flower/f (18).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>Chic bunch of fresh white tulips</i></P>
+                    <p class="price"><b>EGP 3150</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="Chic bunch of fresh white tulips"
+                        data-price="3150" 
+                        data-image="flower/f (18).jpg">Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="Chic bunch of fresh white tulips"
+                        data-price="3150" 
+                        data-image="flower/f (18).jpg">Add to cart</button>
+                    </div>    
+                </div>
+                <div class="box">
+                    <img class="img" src="flower/f (19).jpg">
+                    <div class="divider"></div>
+                    <P class="info"> <i>Natural white tulips with rustic brown touches</i></P>
+                    <p class="price"><b>EGP 2500</b></p>
+                    <div class="buttons">
+                        <a class="buy-Button" href="cart.html" 
+                        data-name="Natural white tulips with rustic brown touches"
+                        data-price="2500" 
+                        data-image="flower/f (19).jpg">Buy now</a>
+                        <button class="addToCart-Button" 
+                        data-name="Natural white tulips with rustic brown touches"
+                        data-price="2500" 
+                        data-image="flower/f (19).jpg">Add to cart</button>
+                    </div>
+                </div>
+                
+              
+        </div>
+
+                <!-- /*-------footer-----------*/ -->
+
+        <div class="footer">
+            <div class="container">
+                <p>We Are Social</p>
+                <div class="Social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>  
+                </div>
+                <p class="copyright">&COPY; 2025 <span>"Western Flowers"</span> All Right Reserved</p>
+              </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            updateCartCount();
+
+    
+            const addToCartButtons = document.querySelectorAll(".addToCart-Button");
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const product = {
+                        name: button.dataset.name,
+                        price: parseFloat(button.dataset.price),
+                        image: button.dataset.image
+                    };
+
+                    addToCart(product);
+                    updateCartCount();  
+                });
+            });
+            });
+
+
+            const addToCart = (product) => {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cart.push(product);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("Product Added To Cart!");
+            };
+
+            const buyNowButtons = document.querySelectorAll(".buy-Button");
+            buyNowButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const product = {
+                        name: button.dataset.name,
+                        price: parseFloat(button.dataset.price),
+                        image: button.dataset.image
+                    };
+
+                    addToCart(product);       
+                    updateCartCount();        
+                    window.location.href = "cart.html";
+                });
+            });
+
+            const updateCartCount = () => {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                document.querySelector('.cart-count').textContent = cart.length;
+            };
+    </script>
+    </body>
+</html>
