@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="anniversary.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>westren flowers</title>
+    <title>Westren Flowers</title>
   </head>
   <body>
     <div class="full">
@@ -14,16 +14,16 @@
 
         <a href="#" class="logo"> Flower <span>*</span></a>
         <nav class="navbar">
-          <a href="index.html">Home</a>
+          <a href="../index.html">Home</a>
       
           <div class="dropdown">
               <a href="#category" class="dropbtn">Category</a>
               <div class="dropdown-content">
-                  <a href="wedding.html">Wedding Flowers</a>
+                  <a href="../wedding/wedding.html">Wedding Flowers</a>
                   <a href="anniversary.html">Anniversary Flowers</a>
-                  <a href="congratulatory.html">Congratulatory Flowers</a>
-                  <a href="just for.html">Just for flowers</a>
-                  <a href="satin.html">Satin Flowers</a>
+                  <a href="../TheProject/congratulatory.html">Congratulatory Flowers</a>
+                  <a href="../just-for/just-for.html">Just for flowers</a>
+                  <a href="../stain/stain.html">Satin Flowers</a>
               </div>
           </div>
       
@@ -34,17 +34,10 @@
       <div class="buttons">
     <a href="login.html" class="btn1"> Log in</a>
     <a href="sign up.html" class="btn2">Sign up</a>
-    <a class="cart-icon" onclick="addtocart()">
-        <i class="fas fa-shopping-cart"></i>
+    <a href="../cart.html" class="cart-icon">
+        <i class="fas fa-shopping-cart" ></i>
         <span class="cart-count" id="cart-count">0</span>
     </a>
-    <script>
-    
-        let cartcount =0;
-        function addtocart(){
-            cartcount++;
-            document.getElementById('cart-count').textContent=cartcount; }
-</script>
 </header>
  
 
@@ -53,200 +46,261 @@
         <p class="p1">&#x1F4A5; Make Your Occasion Bloom &#x1F4A5;</p>
        </div>
 
+       <input  type="text" class="search" id="searchInput" placeholder="Search here..." />
 
       <div class="products-container">
 
         <div class="product">
-          <img src="img16.jpeg" alt="Flower Image" class="product-image">
+          <div class="images">
+            <img src="img16.jpeg" alt="Flower Image" class="product-image" />
+          </div>
+        
            <div class="product-info">
              <h2 class="product-name">Sunflower Bouquet</h2>
              <p class="product-description">
               Reminding us to look for light in every moment
              </p>
              <p class="product-price">Price:2500 LE </p>
-             <button class="buy-now">Buy Now</button><br/>
+             <button class="buy-now"
+             data-name="Sunflower Bouquet"
+             data-price="2500" 
+             data-image="anniversary/img16.jpeg">Buy Now</button><br/>
              <button class="add-to-cart" 
              data-name="Sunflower Bouquet"
              data-price="2500" 
-             data-image="img16.jpeg">Add To Cart</button>
+             data-image="anniversary/img16.jpeg">Add To Cart</button>
         </div>
         </div>
         
         <div class="product">
-          <img src="img61.jpeg" alt="Flower Image" class="product-image">
+          <div class="images">
+            <img src="img61.jpeg" alt="Flower Image" class="product-image" />
+          </div>
            <div class="product-info">
              <h2 class="product-name">Lilies Bouquet</h2>
              <p class="product-description">
                lilies with more love
              </p>
              <p class="product-price">Price:1800 LE </p>
-             <button class="buy-now">Buy Now</button><br/>
+             <button class="buy-now"
+             data-name="Lilies Bouquet"
+             data-price="1800" 
+             data-image="anniversary/img61.jpeg"
+             onclick="window.location.href='../cart.html';">Buy Now</button><br/>
              <button class="add-to-cart" 
                data-name="Lilies Bouquet"
                data-price="1800" 
-               data-image="img61.jpeg">Add To Cart</button>
+               data-image="anniversary/img61.jpeg">Add To Cart</button>
        </div>
        </div>
 
        <div class="product">
-        <img src="img17.jpeg" alt="Flower Image" class="product-image">
+        <div class="images">
+          <img src="img17.jpeg" alt="Flower Image" class="product-image" />
+        </div>
          <div class="product-info">
            <h2 class="product-name">Mixed Tulips Bouquet</h2>
            <p class="product-description">
              Mixed tulips specialy for you
            </p>
            <p class="product-price">Price:2500 LE </p>
-           <button class="buy-now">Buy Now</button><br/>
+           <button class="buy-now"
+           data-name="Mixed Tulips Bouquet"
+           data-price="2500" 
+           data-image="anniversary/img17.jpeg">Buy Now</button><br/>
            <button class="add-to-cart" 
            data-name="Mixed Tulips Bouquet"
            data-price="2500" 
-           data-image="img17.jpeg">Add To Cart</button>
+           data-image="anniversary/img17.jpeg">Add To Cart</button>
       </div>
       </div>
 
       <div class="product">
-        <img src="img22.jpeg" alt="Flower Image" class="product-image">
+        <div class="images">
+          <img src="img22.jpeg" alt="Flower Image" class="product-image" />
+        </div>
          <div class="product-info">
            <h2 class="product-name">Mixed Bouquet</h2>
            <p class="product-description">
              Uniqe white specialy for your soft heart
            </p>
            <p class="product-price">Price:1500 LE </p>
-           <button class="buy-now">Buy Now</button><br/>
+           <button class="buy-now"
+           data-name="Mixed Bouquet"
+           data-price="1500" 
+           data-image="anniversary/img22.jpeg">Buy Now</button><br/>
            <button class="add-to-cart" 
            data-name="Mixed Bouquet"
            data-price="1500" 
-           data-image="img22.jpeg">Add To Cart</button>
+           data-image="anniversary/img22.jpeg">Add To Cart</button>
       </div>
       </div>
       
       
              <div class="product">
-               <img src="img20.jpeg" alt="Flower Image" class="product-image">
+              <div class="images">
+                <img src="img20.jpeg" alt="Flower Image" class="product-image" />
+              </div>
                <div class="product-info">
                  <h2 class="product-name">Unique Bouquet</h2>
                  <p class="product-description">
                   Unique Bouquet for your special day
                  </p>
                  <p class="product-price">Price:1750 LE </p>
-                 <button class="buy-now">Buy Now</button><br/>
+                 <button class="buy-now"
+                 data-name="Unique Bouquet"
+                      data-price="1750" 
+                      data-image="anniversary/img20.jpeg">Buy Now</button><br/>
                     <button class="add-to-cart" 
                       data-name="Unique Bouquet"
                       data-price="1750" 
-                      data-image="img20.jpeg">Add To Cart</button>
+                      data-image="anniversary/img20.jpeg">Add To Cart</button>
                </div>
              </div>
       
              <div class="product">
-              <img src="img10.jpg" alt="Flower Image" class="product-image">
+              <div class="images">
+                <img src="img10.jpg" alt="Flower Image" class="product-image" />
+              </div>
                <div class="product-info">
                  <h2 class="product-name">Mixed Tulips Bouquet</h2>
                  <p class="product-description">
                    Mixed tulips specialy you
                  </p>
                  <p class="product-price">Price:2500 LE </p>
-                 <button class="buy-now">Buy Now</button><br/>
+                 <button class="buy-now"
+                 data-name="Mixed Tulips Bouquet"
+                 data-price="2500" 
+                 data-image="anniversary/img10.jpg">Buy Now</button><br/>
                  <button class="add-to-cart" 
                  data-name="Mixed Tulips Bouquet"
                  data-price="2500" 
-                 data-image="img10.jpg">Add To Cart</button>
+                 data-image="anniversary/img10.jpg">Add To Cart</button>
           </div>
         </div>
       
         <div class="product">
-          <img src="img4.jpeg" alt="Flower Image" class="product-image">
+          <div class="images">
+            <img src="img4.jpeg" alt="Flower Image" class="product-image" />
+          </div>
           <div class="product-info">
             <h2 class="product-name">Pure Pink</h2>
             <p class="product-description">
               Take A Pure Breathe With Your Love
             </p>
             <p class="product-price">Price:1750 LE </p>
-            <button class="buy-now">Buy Now</button><br/>
+            <button class="buy-now"data-name="Pure Pink"
+            data-price="1750" 
+            data-image="anniversary/img4.jpeg">Buy Now</button><br/>
             <button class="add-to-cart" 
               data-name="Pure Pink"
               data-price="1750" 
-              data-image="img4.jpeg">Add To Cart</button>
+              data-image="anniversary/img4.jpeg">Add To Cart</button>
         </div>
         </div>
 
         <div class="product">
-          <img src="img52.jpeg" alt="Flower Image" class="product-image">
+          <div class="images">
+            <img src="img52.jpeg" alt="Flower Image" class="product-image" />
+          </div>
            <div class="product-info">
              <h2 class="product-name">Soft Rose Bouquet</h2>
              <p class="product-description">
                soft  specialy for your soft heart
              </p>
              <p class="product-price">Price:1800 LE </p>
-             <button class="buy-now">Buy Now</button><br/>
+             <button class="buy-now"
+             data-name="Soft Rose Bouquet"
+               data-price="1800" 
+               data-image="anniversary/img52.jpeg">Buy Now</button><br/>
              <button class="add-to-cart" 
                data-name="Soft Rose Bouquet"
                data-price="1800" 
-               data-image="img52.jpeg">Add To Cart</button>
+               data-image="anniversary/img52.jpeg">Add To Cart</button>
         </div>
         </div>
 
         <div class="product">
-          <img src="img21.jpeg" alt="Flower Image" class="product-image">
+          <div class="images">
+            <img src="img21.jpeg" alt="Flower Image" class="product-image" />
+          </div>
            <div class="product-info">
              <h2 class="product-name">Tulips Bouquet</h2>
              <p class="product-description">
                Uniqe tulips specialy for your soft heart
              </p>
              <p class="product-price">Price:1500 LE </p>
-             <button class="buy-now">Buy Now</button><br/>
+             <button class="buy-now"
+             data-name="Tulips Bouquet"
+             data-price="1500" 
+             data-image="anniversary/img21.jpeg">Buy Now</button><br/>
              <button class="add-to-cart" 
              data-name="Tulips Bouquet"
              data-price="1500" 
-             data-image="img21.jpeg">Add To Cart</button>
+             data-image="anniversary/img21.jpeg">Add To Cart</button>
             </div>
      </div>
 
 
       <div class="product">
-        <img src="img15.jpeg" alt="Flower Image" class="product-image">
+        <div class="images">
+          <img src="img15.jpeg" alt="Flower Image" class="product-image" />
+        </div>
          <div class="product-info">
            <h2 class="product-name">Romantiqe Rose Bouquet</h2>
            <p class="product-description">
              For More Love
            </p>
            <p class="product-price">Price:3000 LE </p>
-           <button class="buy-now">Buy Now</button><br/>
+           <button class="buy-now" data-name="Romantiqe Rose Bouquet"
+           data-price="3000" 
+           data-image="anniversary/img15.jpeg">Buy Now</button><br/>
            <button class="add-to-cart" 
            data-name="Romantiqe Rose Bouquet"
            data-price="3000" 
-           data-image="img15.jpeg">Add To Cart</button>
+           data-image="anniversary/img15.jpeg">Add To Cart</button>
       </div>
       </div>
 
         <div class="product">
-          <img src="img7.jpeg" alt="Flower Image" class="product-image">
+          <div class="images">
+            <img src="img7.jpeg" alt="Flower Image" class="product-image" />
+          </div>
           <div class="product-info">
             <h2 class="product-name">Mixed Pink Bouquet</h2>
             <p class="product-description">
               To Be Gentle
             </p>
             <p class="product-price">Price:1750 LE </p>
-            <button class="buy-now">Buy Now</button><br/>
+            <button class="buy-now"
+            data-name="Mixed Pink Bouquet"
+              data-price="1750" 
+              data-image="anniversary/img7.jpeg">Buy Now</button><br/>
             <button class="add-to-cart" 
               data-name="Mixed Pink Bouquet"
               data-price="1750" 
-              data-image="img7.jpeg">Add To Cart</button>
+              data-image="anniversary/img7.jpeg">Add To Cart</button>
           </div>
         </div>
 
         <div class="product">
-          <img src="img8.jpeg" alt="Flower Image" class="product-image">
+          <div class="images">
+            <img src="img8.jpeg" alt="Flower Image" class="product-image" />
+          </div>
           <div class="product-info">
             <h2 class="product-name">Bold Heart Bouquet</h2>
             <p class="product-description">
               To Win Her Heart
             </p>
             <p class="product-price">Price:2000 LE </p>
-            <button class="buy-now">Buy Now</button><br/>
+            <button class="buy-now"
+            data-name="Bold Heart Bouquet"
+              data-price="2000" 
+              data-image="anniversary/img8.jpeg">Buy Now</button><br/>
             <button class="add-to-cart" 
               data-name="Bold Heart Bouquet"
               data-price="2000" 
-              data-image="img8.jpeg">Add To Cart</button>
+              data-image="anniversary/img8.jpeg">Add To Cart</button>
           </div>
         </div>
 
@@ -268,10 +322,23 @@
 </div>
 
 <script>
+  function addToCart(product) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      const existingProduct = cart.find(item => item.name === product.name);
+
+      if (existingProduct) {
+          existingProduct.quantity = (existingProduct.quantity || 1) + 1;
+      } else {
+          product.quantity = 1;
+          cart.push(product);
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
   document.addEventListener("DOMContentLoaded", () => {
       updateCartCount();
 
-    
       const addToCartButtons = document.querySelectorAll(".add-to-cart");
       addToCartButtons.forEach(button => {
           button.addEventListener("click", () => {
@@ -283,38 +350,52 @@
 
               addToCart(product);
               updateCartCount();  
+              alert("Product Added To Cart!");
+  
           });
       });
-  });
 
+      const buyNowButtons = document.querySelectorAll(".buy-now");
+      buyNowButtons.forEach(button => {
+          button.addEventListener("click", () => {
+              const product = {
+                  name: button.dataset.name,
+                  price: parseFloat(button.dataset.price),
+                  image: button.dataset.image
+              };
 
-  const addToCart = (product) => {
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push(product);
-      localStorage.setItem("cart", JSON.stringify(cart));
-      alert("Product Added To Cart!");
-  };
-
-  const buyNowButtons = document.querySelectorAll(".buy-now");
-  buyNowButtons.forEach(button => {
-      button.addEventListener("click", () => {
-          const product = {
-              name: button.dataset.name,
-              price: parseFloat(button.dataset.price),
-              image: button.dataset.image
-          };
-
-          addToCart(product);       
-          updateCartCount();        
-          window.location.href = "cart.html";
+              addToCart(product);
+              updateCartCount();  
+              window.location.href = "../cart.html"; 
+          });
       });
   });
 
   const updateCartCount = () => {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      document.querySelector('.cart-count').textContent = cart.length;
+      document.querySelector('.cart-count').textContent = cart.reduce((total, item) => total + (item.quantity || 1), 0);
   };
+
+
+  const searchInput = document.getElementById('searchInput');  
+    if (searchInput) {  
+        searchInput.addEventListener('input', function () {  
+            const searchTerm = this.value.toLowerCase();  
+            const flowerItems = document.querySelectorAll('.product');  
+            flowerItems.forEach(item => {  
+                const flowerName = item.querySelector('.product-name').textContent.toLowerCase();  
+                const priceText = item.querySelector('.product-price').textContent.toLowerCase();  
+                if (flowerName.includes(searchTerm) || priceText.includes(searchTerm)) {  
+                    item.style.display = 'inline-block';  
+                } else {  
+                    item.style.display = 'none';  
+                }  
+            });  
+        });  
+    }
+    
 </script>
+
 
    </body>
  </html>
