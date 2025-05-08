@@ -1,227 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="" content="">
-     <title> westren flowers</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="project.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-</body>
-
+  <!--  الهيدر وليس الهيدرا الكائن الحى اللى فى الاحياء الشعار و روابط التنقل -->
+</header>
 <header>
+  <div class="logo">Flower <span>*</span></div>
 
-    <a href="#" class="logo"> Flower <span>*</span></a>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-    
-        <div class="dropdown">
-            <a href="#category" class="dropbtn">Category</a>
-            <div class="dropdown-content">
-              <a href="wedding.html">Wedding Flowers</a><br>
-              <a href="anniversary.html">Anniversary Flowers</a><br>
-              <a href="congratulatory.html">Congratulatory Flowers</a><br>
-              <a href="just for.html">Just for flowers</a><br>
-              <a href="satin.html">Satin Flowers</a><br>
-            </div>
-            </div>
-    
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About Us</a>  
-    </nav>  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Category</a>
+    <a href="#">Contact</a>
+    <a href="#">About Us</a>
+  </nav>
 
-  <div class="buttons">
-<a href="login.html" class="btn1"> Log in</a>
-<a href="sign up.html" class="btn2">Sign up</a>
-<a href="cart.html" class="cart-icon">
-    <i class="fas fa-shopping-cart" ></i>
-    <span class="cart-count" id="cart-count">0</span>
-</a>
-</div>
+  <div class="auth-buttons">
+    <button class="login">Log In</button>
+    <button class="signup">Sign Up</button>
+    <div class="cart">
+      <i class="fas fa-shopping-cart cart-icon"></i>
+      <div class="cart-badge">5</div>
+    </div>
+  </div>
 </header>
 
+>
+ </div>
+ </div>
+  
+  <!--اسم الصفحة بتاعتى -->
+  <div class="tagline-container">
+    <h2 class="tagline">Just for flowers</h2>
+  </div>
+  
 
+  <!--  المنتجات اللى هبيعها-->
+  <main class="product-grid">
+    <!--  بسم الله الرحمن الرحيم-->
 
-<script>
-
-    let cartcount =0;
-    function addtocart(){
-        cartcount++;
-        document.getElementById('cart-count').textContent=cartcount;
-
-    }
-</script>
-
-
-
-
-
- 
-
-<section class="home" id="Home">
-    <div class="content">
-    <h3>Western Flowers</h3>
-    <span>Enchanting & Natural Flowers<span>
-    <p>Flowers are a fresh breath to the world.Let your soul breathe
-        with them and see the world differently with us. </p>
-         <a href="#category" class="btn"> Shop now</a><br>
-
+    <div class="product-card">
+      <img src="flower1.jpg" alt="Flower 1" />
+      <div class="price">5000 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
     </div>
-        
-</section>
 
+    <!-- هنعمل تكرار  المنتجم 1  إلى 20 -->
 
-<section id="category">
-    <a href="wedding.html" class="category-box">
-        <div class="category-box-img">
-            <img src="!.png" alt="">
-        </div>
-        <strong> Wedding Flowers </strong> 
-    </a>
-    <a href="anniversary.html" class="category-box">
-        <div class="category-box-img">
-        <img src="f2.png" alt=""></div>
-        <strong> Anniversary Flowers </strong>
-    </a>
+    <div class="product-card">
+      <img src="flower2.jpg" alt="Flower 2" />
+      <div class="price">3500 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
 
+    <div class="product-card">
+      <img src="flower3.jpg" alt="Flower 3" />
+      <div class="price">7500 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
 
-<a href="congratulatory.html" class="category-box">
-    <div class="category-box-img">
-    <img src="f3.png" alt=""></div>
-        <strong> Cogratulatory Flowers </strong>
-    </a>
+    <div class="product-card">
+      <img src="flower4.jpg" alt="Flower 4" />
+      <div class="price">5550 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
 
-    <a href="just for.html" class="category-box">
-        <div class="category-box-img">
-        <img src="f4.png" alt=""></div>
-        <strong> Just for Flowers </strong>
-    </a>
+    <div class="product-card">
+      <img src="flower5.jpg" alt="Flower 5" />
+      <div class="price">2900 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
 
-    <a href="satin.html" class="category-box">
-        <div class="category-box-img">
-            <img src="noback.png" alt="">
-        </div>
-        <strong> Satin Flowers </strong>
-    </a>
-</section>
+    <div class="product-card">
+      <img src="flower6.jpg" alt="Flower 6" />
+      <div class="price">4600 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
 
-<div class="footer">
+    <div class="product-card">
+      <img src="flower7.jpg" alt="Flower 7" />
+      <div class="price">6300 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower8.jpg" alt="Flower 8" />
+      <div class="price">2990 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower9.jpg" alt="Flower 9" />
+      <div class="price">5400 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower10.jpg" alt="Flower 10" />
+      <div class="price">6890 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower11.jpg" alt="Flower 11" />
+      <div class="price">7990 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower12.jpg" alt="Flower 12" />
+      <div class="price">1990 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower13.jpg" alt="Flower 13" />
+      <div class="price">4550 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower14.jpg" alt="Flower 14" />
+      <div class="price">2990 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower15.jpg" alt="Flower 15" />
+      <div class="price">4800 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower16.jpg" alt="Flower 16" />
+      <div class="price">1000 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower17.jpg" alt="Flower 17" />
+      <div class="price">5000 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower18.jpg" alt="Flower 18" />
+      <div class="price">4490 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower19.jpg" alt="Flower 19" />
+      <div class="price">3990 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="flower20.jpg" alt="Flower 20" />
+      <div class="price">4000 L.E</div>
+      <button class="buy-now">Buy</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </main>
+
+  <!-- الفوتر -->
+  
+  <div class="footer">
     <div class="container">
-        <p>We Are Social</p>
-        <div class="Social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>  
-        </div>
-        <p class="copyright">&COPY; 2025 <span>"Western Flowers"</span> All Right Reserved</p>
+      <p class="title">WE ARE SOCIAL</p>
+      <hr class="line" />
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
       </div>
-</div>
-
-
-
-
-
-
-
-
-
-<script>
-    function addToCart(product) {
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      <p class="copyright">
+        &copy; 2025 <span>"Western Flowers"</span> All Right Reserved
+      </p>
+    </div>
+  </div>
   
-        const existingProduct = cart.find(item => item.name === product.name);
+      </p>
+    </div>
+  </div>
+  <script>
+    const cartCount = document.getElementById("cart-count");
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    let count = 0;
   
-        if (existingProduct) {
-            existingProduct.quantity = (existingProduct.quantity || 1) + 1;
-        } else {
-            product.quantity = 1;
-            cart.push(product);
-        }
-        localStorage.setItem("cart", JSON.stringify(cart));
-      }
-  
-    document.addEventListener("DOMContentLoaded", () => {
-        updateCartCount();
-  
-        const addToCartButtons = document.querySelectorAll(".add-to-cart");
-        addToCartButtons.forEach(button => {
-            button.addEventListener("click", () => {
-                const product = {
-                    name: button.dataset.name,
-                    price: parseFloat(button.dataset.price),
-                    image: button.dataset.image
-                };
-  
-                addToCart(product);
-                updateCartCount();  
-                alert("Product Added To Cart!");
-    
-            });
-        });
-  
-        const buyNowButtons = document.querySelectorAll(".buy-now");
-        buyNowButtons.forEach(button => {
-            button.addEventListener("click", () => {
-                const product = {
-                    name: button.dataset.name,
-                    price: parseFloat(button.dataset.price),
-                    image: button.dataset.image
-                };
-  
-                addToCart(product);
-                updateCartCount();  
-                window.location.href = "../cart.html"; 
-            });
-        });
+    addToCartButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        count++;
+        cartCount.textContent = count;
+      });
     });
-  
-    const updateCartCount = () => {
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        document.querySelector('.cart-count').textContent = cart.reduce((total, item) => total + (item.quantity || 1), 0);
-    };
-  
-  
-    const searchInput = document.getElementById('searchInput');  
-      if (searchInput) {  
-          searchInput.addEventListener('input', function () {  
-              const searchTerm = this.value.toLowerCase();  
-              const flowerItems = document.querySelectorAll('.product');  
-              flowerItems.forEach(item => {  
-                  const flowerName = item.querySelector('.product-name').textContent.toLowerCase();  
-                  const priceText = item.querySelector('.product-price').textContent.toLowerCase();  
-                  if (flowerName.includes(searchTerm) || priceText.includes(searchTerm)) {  
-                      item.style.display = 'inline-block';  
-                  } else {  
-                      item.style.display = 'none';  
-                  }  
-              });  
-          });  
-      }
-      
   </script>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
 </html>
