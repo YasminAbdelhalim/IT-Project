@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="registor.css" />
+    <link rel="stylesheet" href="registor.js">
+  </head>
+  <body>
+    <div class="page">
+      <div class="register">
+        <div class="Text">
+          <h1>Registor</h1>
+        </div>
+        <div class="form">
+          <form action="">
+            <label for="userName">UserName:</label>
+            <input
+              type="text"
+              placeholder=" Your Username"
+              name="userName"
+              id="userName"
+              required
+            />
+            <label for="Email">Email:</label>
+            <input
+              type="email"
+              placeholder=" Your Email"
+              name="Email"
+              id="Email"
+              required
+            />
+            <label for="Password">Password:</label>
+            <input
+              type="password"
+              placeholder=" Your Password"
+              name="Password"
+              id="Password"
+              required
+            />
+            <label for="Tel">Phone</label>
+            <input
+              type="tel"
+              placeholder=" Your Phone"
+              name="Tel"
+              id="Tel"
+              required
+            />
+            <label for="Age">Your Age:</label>
+            <input
+              type="number"
+              placeholder=" Your Age"
+              name="age"
+              id="Age"
+              required
+              min="0"
+              max="100"
+            />
+            <h5>
+              Do You Have Account ?
+              <a href="login.html" class="forgot">Log in</a>
+            </h5>
+            <a href="login.html" class="btn" type="Submit">Submit</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

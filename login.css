@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-image: url(login.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, label {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.page .login {
+    height: 70%;
+    width: 30%;
+    right: 20%;
+    background-color: #acb390;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 100;
+}
+
+.Text {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Text h1 {
+    font-size: 60px;
+    color: rgb(239, 214, 194);
+    cursor: context-menu;
+}
+
+.form {
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+form {
+    width: 100%;
+    height: 125%;
+}
+
+label {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #fdf9f5;
+}
+
+input {
+    margin: 10px 15px 10px 5px;
+    width: 90%;
+    padding: 9px 0 9px 5px;
+    font-weight: 700;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #d1b298;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid #688e58;
+    box-shadow: 0 0 10px #efcfb8;
+}
+
+.btn {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+a:not(.forgot) {
+    text-decoration: none;
+    width: 85%;
+    height: 10%;
+    background-color: #f8fdf7;
+    color:#9fa87a ;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+a {
+    text-decoration: none;
+    color: #efcfb8;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #ebdfd1;
+}
+
+h5 {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #f8fdf7;
+}
