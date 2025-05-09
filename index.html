@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="" content="">
+     <title> Westren Flowers</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+</body>
+
+<header>
+
+    <a href="index.html" class="logo"> Flower <span>*</span></a>
+    <nav class="navbar">
+        <div>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#category" class="dropbtn">Category</a>
+            <div class="dropdown-content">
+              <a href="wedding.html">Wedding Flowers</a>
+              <a href="anniversary.html">Anniversary Flowers</a>
+              <a href="congratulatory.html">Congratulatory Flowers</a>
+              <a href="just_for.html">Just for flowers</a>
+              <a href="satin.html">Satin Flowers</a>
+            </div>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        </div>
+    </nav>
+  <div class="buttons">
+<a href="login.html" class="btn1"> Log in</a>
+<a href="registor.html" class="btn2">Sign up</a>
+<a  class="cart-icon" href="cart.html" >
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count" id="cart-count">0</span>
+</a>
+</header>
+
+<script>
+
+    const updateCartCount = () => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    document.querySelector('#cart-count').textContent = cart.reduce((total, item) => total + (item.quantity || 1), 0);
+    };
+    
+    document.addEventListener("DOMContentLoaded", () => {
+            updateCartCount();
+    }); 
+</script>
+
+
+
+
+
+ 
+
+<section class="home" id="Home">
+    <div class="content">
+    <h3>Western Flowers</h3>
+    <span>Enchanting & Natural Flowers<span>
+    <p>Flowers are a fresh breath to the world.Let your soul breathe
+        with them and see the world differently with us. </p>
+         <a href="#category" class="btn"> Shop now</a><br>
+
+    </div>
+        
+</section>
+
+
+<section id="category">
+    <a href="wedding.html" class="category-box">
+        <div class="category-box-img">
+            <img src="!.png" alt="">
+        </div>
+        <strong> Wedding Flowers </strong> 
+    </a>
+    <a href="anniversary.html" class="category-box">
+        <div class="category-box-img">
+        <img src="f2.png" alt=""></div>
+        <strong> Anniversary Flowers </strong>
+    </a>
+
+
+<a href="congratulatory.html" class="category-box">
+    <div class="category-box-img">
+    <img src="f3.png" alt=""></div>
+        <strong> Cogratulatory Flowers </strong>
+    </a>
+
+    <a href="just_for.html" class="category-box">
+        <div class="category-box-img">
+        <img src="f4.png" alt=""></div>
+        <strong> Just for Flowers </strong>
+    </a>
+
+    <a href="satin.html" class="category-box">
+        <div class="category-box-img">
+            <img src="noback.png" alt="">
+        </div>
+        <strong> Satin Flowers </strong>
+    </a>
+</section>
+
+<div class="footer">
+    <div class="container">
+        <p>Our Social</p>
+        <div class="Social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>  
+        </div>
+        <p class="copyright">&COPY; 2025 <span>"Western Flowers"</span> All Right Reserved</p>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
