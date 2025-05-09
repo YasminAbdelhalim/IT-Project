@@ -15,28 +15,28 @@ function product_qty_inc(button) {
   updateCartCount();
 }
 
-function product_qty_dec(button) {  
-  const productDiv = button.closest(".products");  
-  const qtySpan = productDiv.querySelector(".qty");  
-  const name = productDiv.querySelector("h5").textContent.trim(); // Get product name  
-  let currentQty = parseInt(qtySpan.textContent.replace(/\D/g, "")) || 0;  
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];  
-  const index = cart.findIndex(p => p.name === name);  
-  if (index !== -1) {  
-    currentQty -= 1;  
-    if (currentQty < 1) {  
-      cart.splice(index, 1);   
-      productDiv.remove();   
-      if_empty();  
-    } else {  
-      cart[index].quantity = currentQty;  
-      qtySpan.textContent = "Quantity: " + currentQty;  
-    }  
-    localStorage.setItem("cart", JSON.stringify(cart));  
-    updateTotal();  
-    updateCartCount();  
-  }  
-}  
+function product_qty_dec(button) {
+  const productDiv = button.closest(".products");
+  const qtySpan = productDiv.querySelector(".qty");
+  const name = productDiv.querySelector("h5").textContent.trim();
+  let currentQty = parseInt(qtySpan.textContent.replace(/\D/g, "")) || 0;
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const index = cart.findIndex(p => p.name === name);
+  if (index !== -1) {
+    currentQty -= 1;
+    if (currentQty < 1) {
+      cart.splice(index, 1);
+      productDiv.remove();
+      if_empty();
+    } else {
+      cart[index].quantity = currentQty;
+      qtySpan.textContent = "Quantity: " + currentQty;
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateTotal();
+    updateCartCount();
+  }
+}
 
 
 function addToCart(product) {
