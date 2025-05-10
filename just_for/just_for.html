@@ -4,13 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flower</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="just_for.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 
 <body>
 
@@ -22,16 +18,16 @@
                 <div class="dropdown">
                     <a href="#category" class="dropbtn">Category</a>
                     <div class="dropdown-content">
-                      <a href="wedding.html">Wedding Flowers</a>
+                      <a href="../wedding/wedding.html">Wedding Flowers</a>
                       <a href="../anniversary/anniversary.html" >Anniversary Flowers</a>
                       <a href="../congratulatory/congratulatory.html">Congratulatory Flowers</a>
-                      <a href="../just_for/just for.html">Just for flowers</a>
+                      <a href="../just_for/just_for.html">Just for flowers</a>
                       <a href="../satin/satin.html">Satin Flowers</a>
                     </div>
                   </div>
                   
-                <a href="contact.html">Contact us</a>
-                <a href="about.html">About</a>
+                <a href="#footer">Contact us</a>
+                <a href="../about/about.html">About</a>
             </nav>
              <div class="buttons">
                 <a href="../login/login.html" class="btn1"> Log in</a>
@@ -41,12 +37,6 @@
             </div> 
     </header>
 
-
-
-
-
-    </div>
-    </div>
     
  <!-- <h1 class="page-title">Just for flowers</h1> -->
   <h1 class="site-logo">
@@ -56,6 +46,7 @@
 <!-- Search Bar Section -->
 <div style="text-align: center; margin: 20px 0;">
   <input 
+    id="searchInput"
     type="text" 
     placeholder="Search for flowers..." 
     style="padding: 10px 20px; width: 300px; border: none; border-radius: 25px; background-color: #f8f1e8; font-size: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"
@@ -68,187 +59,391 @@
 </div>
 
 
-    
+  
 
     <!--  المنتجات اللى هبيعها-->
     <main class="product-grid">
         <!--  بسم الله الرحمن الرحيم-->
 
         <div class="product-card">
-        <img src="flower1.jpg" alt="Flower 1" />
-       
-<div style="font-size: 15px; font-weight: bold;">4000 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower1.jpg" alt="Flower 1" />
+          <p class="name">red and white flowers</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">4000 L.E</div>
+          <button class="buy-now"
+          data-name="red and white flowers"
+          data-price="4000" 
+          data-image="../just_for/flower1.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="red and white flowers"
+          data-price="4000" 
+          data-image="../just_for/flower1.jpg">Add to Cart</button>
         </div>
 
        
 
         <div class="product-card">
-        
-        <img src="flower2.jpg" alt="Flower 2" />
-<div style="font-size: 15px; font-weight: bold;">5000 L.E</div>  <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower2.jpg" alt="Flower 2" />
+          <p class="name" >white roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">5000 L.E</div>  
+          <button class="buy-now"
+          data-name="white roses"
+          data-price="5000" 
+          data-image="../just_for/flower2.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="white roses"
+          data-price="5000" 
+          data-image="../just_for/flower2.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower3.jpg" alt="Flower 3" />
-        <div style="font-size: 15px; font-weight: bold;">2000 L.E</div>  
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower3.jpg" alt="Flower 3" />
+          <p class="name" >red and yellow roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">2000 L.E</div>  
+          <button class="buy-now"
+          data-name="red and yellow roses"
+          data-price="2000" 
+          data-image="../just_for/flower3.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="red and yellow roses"
+          data-price="2000" 
+          data-image="../just_for/flower3.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower4.jpg" alt="Flower 4" />
-        <div style="font-size: 15px; font-weight: bold;">7500 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower4.jpg" alt="Flower 4" />
+          <p class="name" >red tulips</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">7500 L.E</div>
+          <button class="buy-now"
+          data-name="red tulips"
+          data-price="7500" 
+          data-image="../just_for/flower4.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="red tulips"
+          data-price="7500" 
+          data-image="../just_for/flower4.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower5.jpg" alt="Flower 5" />
-        <div style="font-size: 15px; font-weight: bold;">6000 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower5.jpg" alt="Flower 5" />
+          <p class="name" >white and violet roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">6000 L.E</div>
+          <button class="buy-now"
+          data-name="white and violetroses"
+          data-price="6000" 
+          data-image="../just_for/flower5.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="white and violet roses"
+          data-price="6000" 
+          data-image="../just_for/flower5.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower6.jpg" alt="Flower 6" />
-        <div style="font-size: 15px; font-weight: bold;">3000 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower6.jpg" alt="Flower 6" />
+          <p class="name" >red and white roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">3000 L.E</div>
+          <button class="buy-now"
+          data-name="red and white roses"
+          data-price="3000" 
+          data-image="../just_for/flower6.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="red and white roses"
+          data-price="3000" 
+          data-image="../just_for/flower6.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower7.jpg" alt="Flower 7" />
-       <div style="font-size: 15px; font-weight: bold;">4600 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower7.jpg" alt="Flower 7" />
+          <p class="name" >mixed flowers</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">4600 L.E</div>
+          <button class="buy-now"
+          data-name="mixed flowers"
+          data-price="4600" 
+          data-image="../just_for/flower7.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="mixed flowers"
+          data-price="4600" 
+          data-image="../just_for/flower7.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower8.jpg" alt="Flower 8" />
-       <div style="font-size: 15px; font-weight: bold;">2999L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower8.jpg" alt="Flower 8" />
+          <p class="name" >yellow and purple roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">2999 L.E</div>
+          <button class="buy-now"
+          data-name="yellow and purple roses"
+          data-price="2999" 
+          data-image="../just_for/flower8.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="yellow and purple roses"
+          data-price="2999" 
+          data-image="../just_for/flower8.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower9.jpg" alt="Flower 9" />
-        <div style="font-size: 15px; font-weight: bold;">4099 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower9.jpg" alt="Flower 9" />
+          <p class="name" >white and pink flowers</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">4099 L.E</div>
+          <button class="buy-now"
+          data-name="white and pink flowers"
+          data-price="4099" 
+          data-image="../just_for/flower9.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="white and pink flowers"
+          data-price="4099" 
+          data-image="../just_for/flower9.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower10.jpg" alt="Flower 10" />
-       <div style="font-size: 15px; font-weight: bold;">5999 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower10.jpg" alt="Flower 10" />
+          <p class="name" >red,white and peach roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">5999 L.E</div>
+          <button class="buy-now"
+          data-name="red,white and peach roses"
+          data-price="5999" 
+          data-image="../just_for/flower10.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="red,white and peach roses"
+          data-price="5999" 
+          data-image="../just_for/flower10.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower11.jpg" alt="Flower 11" />
-       <div style="font-size: 15px; font-weight: bold;">1999L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower11.jpg" alt="Flower 11" />
+          <p class="name" >blue and purple roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">1999 L.E</div>
+          <button class="buy-now"
+          data-name="blue and purple roses"
+          data-price="1999" 
+          data-image="../just_for/flower11.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="blue and purple roses"
+          data-price="1999" 
+          data-image="../just_for/flower11.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower12.jpg" alt="Flower 12" />
-        <div style="font-size: 15px; font-weight: bold;">4000 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product-card">
-        <img src="flower13.jpg" alt="Flower 13" />
-        <div style="font-size: 15px; font-weight: bold;">1999L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-        <img src="flower14.jpg" alt="Flower 14" />
-       <div style="font-size: 15px; font-weight: bold;">4090 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower12.jpg" alt="Flower 12" />
+          <p class="name" >red roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">4000 L.E</div>
+          <button class="buy-now"
+          data-name="red roses"
+          data-price="4000" 
+          data-image="../just_for/flower12.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="red roses"
+          data-price="4000" 
+          data-image="../just_for/flower12.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower15.jpg" alt="Flower 15" />
-        <div style="font-size: 15px; font-weight: bold;">5000 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower13.jpg" alt="Flower 13" />
+          <p class="name" >white and pink roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">1999 L.E</div>
+          <button class="buy-now"
+          data-name="white and pink roses"
+          data-price="1999" 
+          data-image="../just_for/flower13.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="white and pink roses"
+          data-price="1999" 
+          data-image="../just_for/flower13.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower16.jpg" alt="Flower 16" />
-        <div style="font-size: 15px; font-weight: bold;">6999L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower14.jpg" alt="Flower 14" />
+          <p class="name" >beige roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">4090 L.E</div>
+          <button class="buy-now"
+          data-name="beige roses"
+          data-price="4090" 
+          data-image="../just_for/flower14.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="beige roses"
+          data-price="4090" 
+          data-image="../just_for/flower14.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower17.jpg" alt="Flower 17" />
-        <div style="font-size: 15px; font-weight: bold;">3999 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower15.jpg" alt="Flower 15" />
+          <p class="name" >fresh yellow roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">5000 L.E</div>
+          <button class="buy-now"
+          data-name="fresh yellow roses"
+          data-price="5000" 
+          data-image="../just_for/flower15.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="fresh yellow roses"
+          data-price="5000" 
+          data-image="../just_for/flower15.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower18.jpg" alt="Flower 18" />
-        <div style="font-size: 15px; font-weight: bold;">3000 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower16.jpg" alt="Flower 16" />
+          <p class="name" >violet tulips</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">6999 L.E</div>
+          <button class="buy-now"
+          data-name="violet tulips"
+          data-price="6999" 
+          data-image="../just_for/flower16.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="violet tulips"
+          data-price="6999" 
+          data-image="../just_for/flower16.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower19.jpg" alt="Flower 19" />
-       <div style="font-size: 15px; font-weight: bold;">3500 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower17.jpg" alt="Flower 17" />
+          <p class="name" >fresh mixed flowers</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">3999 L.E</div>
+          <button class="buy-now"
+          data-name="fresh mixed flowers"
+          data-price="3999" 
+          data-image="../just_for/flower17.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="fresh mixed flowers"
+          data-price="3999" 
+          data-image="../just_for/flower17.jpg">Add to Cart</button>
         </div>
 
         <div class="product-card">
-        <img src="flower20.jpg" alt="Flower 20" />
-        <div style="font-size: 15px; font-weight: bold;">4000 L.E</div>
-        <button class="buy-now">Buy</button>
-        <button class="add-to-cart">Add to Cart</button>
+          <img class="img" src="flower18.jpg" alt="Flower 18" />
+          <p class="name" >pink and beige roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">3000 L.E</div>
+          <button class="buy-now"
+          data-name="pink and beige roses"
+          data-price="3000" 
+          data-image="../just_for/flower18.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="pink and beige roses"
+          data-price="3000" 
+          data-image="../just_for/flower18.jpg">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img class="img" src="flower19.jpg" alt="Flower 19" />
+          <p class="name" >pink and purple roses</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">3500 L.E</div>
+          <button class="buy-now"
+          data-name="pink and purple roses"
+          data-price="3500" 
+          data-image="../just_for/flower19.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="pink and purple roses"
+          data-price="3500" 
+          data-image="../just_for/flower19.jpg">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img class="img" src="flower20.jpg" alt="Flower 20" />
+          <p class="name" >chic mixed flowers</p>
+          <div class="price" style="font-size: 15px; font-weight: bold;">4000 L.E</div>
+          <button class="buy-now"
+          data-name="chic mixed flowers"
+          data-price="4000" 
+          data-image="../just_for/flower20.jpg">Buy</button>
+          <button class="add-to-cart"
+          data-name="chic mixed flowers"
+          data-price="4000" 
+          data-image="../just_for/flower20.jpg">Add to Cart</button>
         </div>
     </main>
 
     <!-- الفوتر -->
     
-    <div class="footer">
-        <div class="container">
-        <p class="title">WE ARE SOCIAL</p>
-        <hr class="line" />
-        <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>
-        </div>
-        <p class="copyright">
-            &copy; 2025 <span>"Western Flowers"</span> All Right Reserved
-        </p>
-        </div>
-    </div>
-    
-        </p>
-        </div>
-    </div>
+    <div id="footer" class="footer">
+      <div class="container">
+          <p class="title">We Are Social</p>
+          <hr class="line" />
+          <div class="social-icons">
+              <a href="https://www.facebook.com" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+              </a>  
+          </div>
+          <p class="copyright">&COPY; 2025 <span>"Western Flowers"</span> All Right Reserved</p>
+      </div>
+    </div> 
+        
     <script>
-        const cartCount = document.getElementById("cart-count");
-        const addToCartButtons = document.querySelectorAll(".add-to-cart");
-        let count = 0;
-    
-        addToCartButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            count++;
-            cartCount.textContent = count;
-        });
-        });
+        function addToCart(product) {
+                  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+              
+                  const existingProduct = cart.find(item => item.name === product.name);
+              
+                  if (existingProduct) {
+                    existingProduct.quantity = (existingProduct.quantity || 1) + 1;
+                  } else {
+                    product.quantity = 1;
+                    cart.push(product);
+                  }
+                  localStorage.setItem("cart", JSON.stringify(cart));
+                }
+              
+                document.addEventListener("DOMContentLoaded", () => {
+                  updateCartCount();
+              
+                  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+                  addToCartButtons.forEach(button => {
+                    button.addEventListener("click", () => {
+                      const product = {
+                        name: button.dataset.name,
+                        price: parseFloat(button.dataset.price),
+                        image: button.dataset.image
+                      };
+              
+                      addToCart(product);
+                      updateCartCount();
+                      alert("Product Added To Cart!");
+                    });
+                  });
+              
+                  const buyNowButtons = document.querySelectorAll(".buy-now");
+                  buyNowButtons.forEach(button => {
+                    button.addEventListener("click", () => {
+                      const product = {
+                        name: button.dataset.name,
+                        price: parseFloat(button.dataset.price),
+                        image: button.dataset.image
+                      };
+              
+                      addToCart(product);
+                      updateCartCount();
+                      window.location.href = "../cart/cart.html";
+                    });
+                  });
+                });
+              
+                const updateCartCount = () => {
+                  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                  document.querySelector('.cart-count').textContent = cart.reduce((total, item) => total + (item.quantity || 1), 0);
+                };
+              
+                // ------------search--------
+
+                const searchInput = document.getElementById('searchInput');
+                if (searchInput) {
+                  searchInput.addEventListener('input', function () {
+                    const searchTerm = this.value.toLowerCase();
+                    const flowerItems = document.querySelectorAll('.product-card');
+                    flowerItems.forEach(item => {
+                      const flowerName = item.querySelector('.name').textContent.toLowerCase();
+                      const priceText = item.querySelector('.price').textContent.toLowerCase();
+                      if (flowerName.includes(searchTerm) || priceText.includes(searchTerm)) {
+                        item.style.display = 'inline-block';
+                      } else {
+                        item.style.display = 'none';
+                      }
+                    });
+                  });
+                }
     </script>
   
 </body>
