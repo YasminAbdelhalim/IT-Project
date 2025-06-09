@@ -184,7 +184,20 @@ header{
   font-size: 1rem;
 }
 
+/* .product {
+  flex: 1 1 100%; 
+  min-height: 50vh;
+} */
 }
+/* .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #527e3b;
+    text-align: center;
+    margin-top: 130px;
+    font-weight: 700;
+    letter-spacing: 2px;
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 
@@ -214,6 +227,58 @@ max-width: calc(20rem * 3 + 10rem);
 margin: 0 auto;
 }
 
+/* 
+.product{
+box-sizing: border-box;
+align-items: center;
+text-align: center;
+border-radius: 5px;
+box-shadow: 0 4px 8px rgba(160, 110, 110, 0.836);
+background-color: #f7eee3;
+padding: 10px;
+width: 20rem;
+height: 32rem;
+}  */
+/* .images {
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1 / 1;
+width: 100%;
+}
+.product-image {
+width: 100%;             
+height: auto;            
+aspect-ratio: 1 / 1;     
+object-fit: cover;
+border-radius: 10px;
+transition: transform 0.7s ease;
+}
+
+.product:hover .product-image {
+transform: scale(1.1); 
+}
+
+.product-info {
+font-family: 'Pacifico', cursive;
+padding: .1rem .1rem .1rem .1rem;
+}
+.product-name {
+font-family: 'Arial', sans-serif;
+font-size: 1.5rem;
+color: #000000;
+}
+.product-description {
+font-family: 'Arial', sans-serif;
+font-size: 1rem;
+color: #527e3b;
+line-height: 1.5;
+}
+.product-price{
+font-weight: bold;
+color: #3b3737;
+} */
 
 
 .buy-now {
