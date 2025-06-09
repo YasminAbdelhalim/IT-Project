@@ -1,9 +1,9 @@
 body {
   background-color: white;
-  padding-top: auto;
+  padding-top: 250px;
   margin: 0;
   height: 100%;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Segoe UI', sans-serif;
 }
   .page_container {
     min-height: 100vh;
@@ -16,159 +16,146 @@ body {
   }
 
   header {
-    flex-wrap: wrap; 
-    position: relative;
-    top: 0; left: 0; right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background: #f6f1e1;
-    padding: 1rem 5%;
-    margin-top:auto ;
+    padding: 1.3rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .3rem 8rem rgba(255, 216, 216, 0.1);
-    font-family: 'Segoe UI',  sans-serif;
+    box-shadow: 0 .5rem 1rem rgba(255, 216, 216, 0.1);
+    font-weight: 500;
   }
-  
-  header .logo {
-    font-size: 2.6rem;
+
+  .buttons {
+    gap: 1rem;
+    display: flex;
+  }
+
+  .btn1, .btn2 {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    text-align: center;
+  }
+
+  .btn1 {
+    background: #3a6e3c;
+    color: #f6f1e1;
+    transition: color 0.3s;
+  }
+
+  .btn1:hover {
+    color: #f1ab79;
+  }
+
+  .btn2 {
+    background: #ebc3a7;
     color: #527e3b;
-    font-weight: bold;
-    text-decoration:none;
-    margin-right: 0;
-    padding-right: 3rem;
-    padding-left: 2.3rem;
+    transition: color 0.3s;
   }
-  
+
+  .btn2:hover {
+    color: #f9eadf;
+  }
+
+  .cart-icon {
+    color: #42692c;
+    padding-left: 2.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .cart-icon:hover {
+    color: #ebc3a7;
+  }
+
+  .cart-count {
+    position: absolute;
+    background: red;
+    color: #f6f1e1;
+    border-radius: 50%;
+    padding: .2rem .4rem;
+    font-size: .8rem;
+    top: .6rem;
+  }
+
+  header .logo {
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #527e3b;
+    font-weight: bolder;
+  }
+
   header .logo span {
     color: #faa467;
-    padding-right: 3rem;
-    padding-left: 2.3rem;
-     
   }
+
   .dropdown {
     position: relative;
     display: inline-block;
-  
   }
-  
+
   .dropbtn {
     font-size: 1.09rem;
     color: #42692c;
     text-decoration: none;
     padding: 0;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #ffffff;
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1001;
     border-radius: 0.5rem;
     padding: 0.5rem 0;
   }
-  
+
   .dropdown-content a {
     color: #42692c;
-    padding: 0.5rem 1rem;
+    padding: .5rem 1.5rem;
     text-decoration: none;
     display: block;
-    transition: 0.3s ease; 
+    transition: 0.3s ease;
+    white-space: nowrap;
   }
-  
+
   .dropdown-content a:hover {
     background-color: #f5d1b757;
     color: #f3c4a2;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
-  .navbar {
-    display: flex;
-    gap: 2.8rem;
-    margin: auto;  
-    padding-left: 30px;
-    
-  }
-  
+
   header .navbar a {
-    font-size: 1.5rem;
-    color: #42692c;
     text-decoration: none;
-    transition: 0.3s ease;
-    
-    
+    font-size: 1.2rem;
+    padding: 0 2.5rem;
+    color: #42692c;
+    font-family: serif;
+    transition: color 0.3s;
   }
-  
+
   header .navbar a:hover {
     color: #ffa463;
   }
-  
-  .btn1, .btn2 {
-    padding: 0.5rem 1rem;
-    font-size: 0.95rem;
-    border-radius: 5rem;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .cart-icon{
-    color: #42692c;
-    padding-left: 40px;
-    font-size: 25px;
-    cursor:pointer;
-    position:relative;
-  }
-  
-  .cart-icon:hover{
-  color: #ebc3a7;
-  }
-  .cart-count{
-  background: rgb(255, 255, 255);
-  color: #000000;
-  border-radius: 50%;
-  padding: 3px 6px;
-  font-size: 11px;
-  top:1.2rem;
-  position: absolute;
-  top: -13px;
-  right: -13px
-  }
-  .btn1 {
-    background: #578e4e;
-    color: #ffe4c6;
-  }
-  
-  .btn1:hover {
-    color: #f6f1e1;
-  }
-  
-  .btn2 {
-    background: #f3c4a2;
-    color: #527e3b;
-  }
-  
-  .btn2:hover {
-    color: #f6f1e1;
-  }
-  .headerBTN{
-    display: flex;
-    gap: 24px;
-    margin-left: auto;
-  }
-  /* ----------------header ends here------------------------- */
-  
 
   .products_container {
     display: grid;
     grid-template-columns: auto;
     justify-items: start;
-    margin-top: auto;
   }
 
   .product_img {
@@ -331,18 +318,17 @@ body {
     scale: 0.9;
   }
 
-  .footer {
-    background-image: url(images/footer.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 25px;
-    position: relative;
-    color: #f18f65;
-    text-align: center;
-  }
-
-  .footer::before {
+  #footer{
+ background-image:url(images/footer.jpeg) ;
+ background-size: cover;
+ background-position:center ;
+ background-repeat: no-repeat;
+ padding: 25px;
+ position: relative;
+ color:#f18f65;
+ text-align: center;
+ }
+ #footer::before{
     content: none;
     position: absolute;
     left: 0;
@@ -350,27 +336,33 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0 / 70%);
-  }
-
-  .footer .container {
-    position: relative;
-  }
-
-  .footer p:not(.copyright) {
+ }
+ #footer .container{
+    position: relative;}
+#footer p:not(.copyright){
     text-transform: uppercase;
     padding: 10px;
     border-bottom: 2px solid rgb(38, 80, 38);
-    font-size: 18px;
+    font-size: 20px;
     width: fit-content;
     margin: 10px auto;
-  }
-
-  .footer .Social-icons i {
+}
+#footer .Social-icons i{
     padding: 15px 10px;
+    font-size: 20px;
+    color: #f18f65;
+}
+#footer .Social-icons i:hover{
+    color: #0e26b3;
+}
+ #footer .copyright {
     font-size: 15px;
-  }
-
-  .footer .copyright span {
+}
+#footer .copyright span{
     font-weight: bold;
     color: #42692c;
-    }
+
+}
+#footer a{
+  text-decoration: none;
+}

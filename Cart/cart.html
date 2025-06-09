@@ -11,7 +11,7 @@
   <body>
     <div class="page_container">
       <header>
-        <a href="../home/index.html" class="logo">Flower 
+        <a href="../home/index.html" class="logo">Flower <span>*</span>
         </a>
         <nav class="navbar">
           <a href="../home/index.html">Home</a>
@@ -21,14 +21,14 @@
               <a href="../wedding/wedding.html">Wedding Flowers</a>
               <a href="../anniversary/anniversary.html">Anniversary Flowers</a>
               <a href="../congratulatory/congratulatory.html">Congratulatory Flowers</a>
-              <a href="../just_for/just for.html">Just for flowers</a>
+              <a href="../just_for/just_for.html">Just for flowers</a>
               <a href="../satin/satin.html">Satin Flowers</a>
             </div>
           </div>
-          <a href="contact.html">Contact</a>
-          <a href="about.html">About</a>
+          <a href="#footer">Contact</a>
+          <a href="../about/about.html">About</a>
         </nav>
-        <div class="headerBTN">
+        <div class="buttons">
           <a href="../login/login.html" class="btn1"> Log in</a>
           <a href="../register/register.html" class="btn2">Sign up</a>
           <a class="cart-icon" href="cart.html">
@@ -42,6 +42,7 @@
             }
             document.addEventListener("DOMContentLoaded", updateCartCount);
           </script>
+          </div>
       </header>
       <main>
         <h2 id="empty" style="display:none; text-align: center; font-size: 30px;">Your cart is empty!</h2>
@@ -65,21 +66,29 @@
               <input id="pay" type="submit" value="Pay">
             </form>
           </div>
-        </div>
+        </div> 
         <button class="buy" onclick="checkout(this)">Process to check out</button>
       </main>
-      <div class="footer">
-        <div class="container">
-          <p>We Are Social</p>
-          <div class="Social-icons">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>
-          </div>
-          <p class="copyright">&COPY; 2025 <span>"Western Flowers"</span> All Right Reserved </p>
+      <div id="footer">
+    <div class="container">
+        <p>We Are Social</p>
+        <div class="Social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>  
         </div>
-      </div>
+        <p class="copyright">&COPY; 2025 <span>"Western Flowers"</span> All Right Reserved</p>
     </div>
+  </div>
+</div>  
   </body>
   </html>

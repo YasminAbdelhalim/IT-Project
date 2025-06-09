@@ -1,7 +1,7 @@
 *{
   margin:0; padding:0;
   box-sizing: border-box;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-family: 'Segoe UI', sans-serif;
   outline: none; border: none;
   text-decoration: none;
   text-transform: capitalize;
@@ -16,7 +16,8 @@ header{
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  box-shadow: 0 .5rem 1rem rgba(255, 216, 216, 0.1)
+  box-shadow: 0 .5rem 1rem rgba(255, 216, 216, 0.1);
+  flex-wrap: wrap ;
   }
   .buttons{
       gap: 1rem;
@@ -27,25 +28,28 @@ header{
       display:inline-block;
       text-decoration: none;
       text-align: center;
-      font-size: .6rem;
-      padding: .6rem .6rem;
+      font-size: .95rem;
+      padding: .5rem 1rem;
       border-radius: 5rem;
-      text-align: center;
+      font-weight: 500;
   }
-  .btn1{
-      background: #3a6e3c;
-      color: #f6f1e1;
-  }
-  .btn1:hover{
-  color:#f1ab79;
-  }
-  .btn2{
-      background: #ebc3a7;
-      color: #527e3b;
-  }
-  .btn2:hover{
-      color: #f9eadf;}
-  
+  .btn1 {
+  background: #578e4e;
+  color: #ffe4c6;
+}
+
+.btn1:hover {
+  color: #f6f1e1;
+}
+
+.btn2 {
+  background: #f3c4a2;
+  color: #527e3b;
+}
+
+.btn2:hover {
+  color: #f6f1e1;
+}
   
       .cart-icon{
           color:#42692c;
@@ -59,7 +63,6 @@ header{
   }
   .cart-count{
       position: absolute;
-      right:6rem;
       background: red;
       color: #f6f1e1;
       border-radius: 50%;
@@ -224,6 +227,7 @@ html{
   gap: 80px;
   max-width: calc(20rem * 3 + 10rem); 
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 
@@ -312,45 +316,52 @@ html{
     .buy-now,.add-to-cart{
       position: relative;
     }
-.footer{
-  background-image:url(footer.jpeg) ;
-  background-size: cover;
-  background-position:center ;
-  background-repeat: no-repeat;
-  padding: 25px;
-  position: relative;
-  color:#f18f65;
-  text-align: center;
+#footer{
+ background-image:url(images/footer.jpeg) ;
+ background-size: cover;
+ background-position:center ;
+ background-repeat: no-repeat;
+ padding: 25px;
+ position: relative;
+ color:#f18f65;
+ text-align: center;
+ }
+ #footer::before{
+    content: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 / 70%);
+ }
+ #footer .container{
+    position: relative;
   }
-  .footer::before{
-     content: none;
-     position: absolute;
-     left: 0;
-     top: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgb(0, 0, 0 / 70%);
-  }
-  .footer .container{
-     position: relative;}
- .footer p:not(.copyright){
-     text-transform: uppercase;
-     padding: 10px;
-     border-bottom: 2px solid rgb(38, 80, 38);
-     font-size: 18px;
-     width: fit-content;
-     margin: 10px auto;
- }
- .footer .Social-icons i{
-     padding: 15px 10px;
-     font-size: 15px;
- }
- 
- .footer .copyright span{
-     font-weight: bold;
-     color: #42692c;
- 
- }
+#footer p:not(.copyright){
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 2px solid rgb(38, 80, 38);
+    font-size: 20px;
+    width: fit-content;
+    margin: 10px auto;
+}
+#footer .Social-icons i{
+    padding: 15px 10px;
+    font-size: 20px;
+    color: #f18f65;
+}
+#footer .Social-icons i:hover{
+    color: #0e26b3;
+}
+ #footer .copyright {
+    font-size: 15px;
+}
+#footer .copyright span{
+    font-weight: bold;
+    color: #42692c;
+
+}
  .search {
   width: 80%;
      max-width: 400px;
@@ -380,5 +391,3 @@ html{
      font-size: 25px;
      transition:  0.3s ;
    }
-   
- 

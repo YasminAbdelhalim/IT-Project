@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="anniversary.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title>Westren Flowers</title>
   </head>
   <body>
@@ -12,29 +13,29 @@
 
       <header>
 
-        <a href="#" class="logo"> Flower <span>*</span></a>
+        <a href="../home/index.html" class="logo"> Flower <span>*</span></a>
         <nav class="navbar">
-          <a href="../index.html">Home</a>
+          <a href="../home/index.html">Home</a>
       
           <div class="dropdown">
               <a href="#category" class="dropbtn">Category</a>
               <div class="dropdown-content">
                   <a href="../wedding/wedding.html">Wedding Flowers</a>
                   <a href="anniversary.html">Anniversary Flowers</a>
-                  <a href="../TheProject/congratulatory.html">Congratulatory Flowers</a>
-                  <a href="../just-for/just-for.html">Just for flowers</a>
-                  <a href="../stain/stain.html">Satin Flowers</a>
+                  <a href="../congratulatory/congratulatory.html">Congratulatory Flowers</a>
+                  <a href="../just_for/just_for.html">Just for flowers</a>
+                  <a href="../satin/satin.html">Satin Flowers</a>
               </div>
           </div>
       
-          <a href="contact.html">Contact</a>
-          <a href="about.html">About</a>
+          <a href="#footer">Contact</a>
+          <a href="../about/about.html">About</a>
       </nav>
       
       <div class="buttons">
-    <a href="login.html" class="btn1"> Log in</a>
-    <a href="sign up.html" class="btn2">Sign up</a>
-    <a href="../cart.html" class="cart-icon">
+    <a href="../login/login.html" class="btn1"> Log in</a>
+    <a href="../register/register.html" class="btn2">Sign up</a>
+    <a href="../cart/cart.html" class="cart-icon">
         <i class="fas fa-shopping-cart" ></i>
         <span class="cart-count" id="cart-count">0</span>
     </a>
@@ -50,9 +51,12 @@
 
       <div class="products-container">
 
-        <div class="product">
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="product">
           <div class="images">
-            <img src="img16.jpeg" alt="Flower Image" class="product-image" />
+            <img src="images/img16.jpeg" alt="Flower Image" class="product-image" />
           </div>
         
            <div class="product-info">
@@ -64,17 +68,20 @@
              <button class="buy-now"
              data-name="Sunflower Bouquet"
              data-price="2500" 
-             data-image="anniversary/img16.jpeg">Buy Now</button><br/>
+             data-image="../anniversary/images/img16.jpeg">Buy Now</button><br/>
              <button class="add-to-cart" 
              data-name="Sunflower Bouquet"
              data-price="2500" 
-             data-image="anniversary/img16.jpeg">Add To Cart</button>
+             data-image="../anniversary/images/img16.jpeg">Add To Cart</button>
         </div>
         </div>
         
-        <div class="product">
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="product">
           <div class="images">
-            <img src="img61.jpeg" alt="Flower Image" class="product-image" />
+            <img src="images/img61.jpeg" alt="Flower Image" class="product-image" />
           </div>
            <div class="product-info">
              <h2 class="product-name">Lilies Bouquet</h2>
@@ -85,18 +92,20 @@
              <button class="buy-now"
              data-name="Lilies Bouquet"
              data-price="1800" 
-             data-image="anniversary/img61.jpeg"
-             onclick="window.location.href='../cart.html';">Buy Now</button><br/>
+             data-image="../anniversary/images/img61.jpeg">Buy Now</button><br/>
              <button class="add-to-cart" 
                data-name="Lilies Bouquet"
                data-price="1800" 
-               data-image="anniversary/img61.jpeg">Add To Cart</button>
+               data-image="../anniversary/images/img61.jpeg">Add To Cart</button>
        </div>
        </div>
 
-       <div class="product">
+       <div 
+       data-aos="fade-up"
+        data-aos-duration="1000"
+       class="product">
         <div class="images">
-          <img src="img17.jpeg" alt="Flower Image" class="product-image" />
+          <img src="images/img17.jpeg" alt="Flower Image" class="product-image" />
         </div>
          <div class="product-info">
            <h2 class="product-name">Mixed Tulips Bouquet</h2>
@@ -107,17 +116,20 @@
            <button class="buy-now"
            data-name="Mixed Tulips Bouquet"
            data-price="2500" 
-           data-image="anniversary/img17.jpeg">Buy Now</button><br/>
+           data-image="../anniversary/images/img17.jpeg">Buy Now</button><br/>
            <button class="add-to-cart" 
            data-name="Mixed Tulips Bouquet"
            data-price="2500" 
-           data-image="anniversary/img17.jpeg">Add To Cart</button>
+           data-image="../anniversary/images/img17.jpeg">Add To Cart</button>
       </div>
       </div>
 
-      <div class="product">
+      <div 
+      data-aos="fade-up"
+        data-aos-duration="1000"
+      class="product">
         <div class="images">
-          <img src="img22.jpeg" alt="Flower Image" class="product-image" />
+          <img src="images/img22.jpeg" alt="Flower Image" class="product-image" />
         </div>
          <div class="product-info">
            <h2 class="product-name">Mixed Bouquet</h2>
@@ -128,18 +140,21 @@
            <button class="buy-now"
            data-name="Mixed Bouquet"
            data-price="1500" 
-           data-image="anniversary/img22.jpeg">Buy Now</button><br/>
+           data-image="../anniversary/images/img22.jpeg">Buy Now</button><br/>
            <button class="add-to-cart" 
            data-name="Mixed Bouquet"
            data-price="1500" 
-           data-image="anniversary/img22.jpeg">Add To Cart</button>
+           data-image="../anniversary/images/img22.jpeg">Add To Cart</button>
       </div>
       </div>
       
       
-             <div class="product">
+             <div 
+             data-aos="fade-up"
+        data-aos-duration="1000"
+             class="product">
               <div class="images">
-                <img src="img20.jpeg" alt="Flower Image" class="product-image" />
+                <img src="images/img20.jpeg" alt="Flower Image" class="product-image" />
               </div>
                <div class="product-info">
                  <h2 class="product-name">Unique Bouquet</h2>
@@ -150,38 +165,44 @@
                  <button class="buy-now"
                  data-name="Unique Bouquet"
                       data-price="1750" 
-                      data-image="anniversary/img20.jpeg">Buy Now</button><br/>
+                      data-image="../anniversary/images/img20.jpeg">Buy Now</button><br/>
                     <button class="add-to-cart" 
                       data-name="Unique Bouquet"
                       data-price="1750" 
-                      data-image="anniversary/img20.jpeg">Add To Cart</button>
+                      data-image="../anniversary/images/img20.jpeg">Add To Cart</button>
                </div>
              </div>
       
-             <div class="product">
+             <div 
+             data-aos="fade-up"
+        data-aos-duration="1000"
+        class="product">
               <div class="images">
-                <img src="img10.jpg" alt="Flower Image" class="product-image" />
+                <img src="images/img10.jpg" alt="Flower Image" class="product-image" />
               </div>
                <div class="product-info">
-                 <h2 class="product-name">Mixed Tulips Bouquet</h2>
+                 <h2 class="product-name">pink & white Tulips</h2>
                  <p class="product-description">
                    Mixed tulips specialy you
                  </p>
                  <p class="product-price">Price:2500 LE </p>
                  <button class="buy-now"
-                 data-name="Mixed Tulips Bouquet"
+                 data-name="pink & white Tulips"
                  data-price="2500" 
-                 data-image="anniversary/img10.jpg">Buy Now</button><br/>
+                 data-image="../anniversary/images/img10.jpg">Buy Now</button><br/>
                  <button class="add-to-cart" 
-                 data-name="Mixed Tulips Bouquet"
+                 data-name="pink & white Tulips"
                  data-price="2500" 
-                 data-image="anniversary/img10.jpg">Add To Cart</button>
+                 data-image="../anniversary/images/img10.jpg">Add To Cart</button>
           </div>
         </div>
       
-        <div class="product">
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="product">
           <div class="images">
-            <img src="img4.jpeg" alt="Flower Image" class="product-image" />
+            <img src="images/img4.jpeg" alt="Flower Image" class="product-image" />
           </div>
           <div class="product-info">
             <h2 class="product-name">Pure Pink</h2>
@@ -191,17 +212,20 @@
             <p class="product-price">Price:1750 LE </p>
             <button class="buy-now"data-name="Pure Pink"
             data-price="1750" 
-            data-image="anniversary/img4.jpeg">Buy Now</button><br/>
+            data-image="../anniversary/images/img4.jpeg">Buy Now</button><br/>
             <button class="add-to-cart" 
               data-name="Pure Pink"
               data-price="1750" 
-              data-image="anniversary/img4.jpeg">Add To Cart</button>
+              data-image="../anniversary/images/img4.jpeg">Add To Cart</button>
         </div>
         </div>
 
-        <div class="product">
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="product">
           <div class="images">
-            <img src="img52.jpeg" alt="Flower Image" class="product-image" />
+            <img src="images/img52.jpeg" alt="Flower Image" class="product-image" />
           </div>
            <div class="product-info">
              <h2 class="product-name">Soft Rose Bouquet</h2>
@@ -212,17 +236,20 @@
              <button class="buy-now"
              data-name="Soft Rose Bouquet"
                data-price="1800" 
-               data-image="anniversary/img52.jpeg">Buy Now</button><br/>
+               data-image="../anniversary/images/img52.jpeg">Buy Now</button><br/>
              <button class="add-to-cart" 
                data-name="Soft Rose Bouquet"
                data-price="1800" 
-               data-image="anniversary/img52.jpeg">Add To Cart</button>
+               data-image="../anniversary/images/img52.jpeg">Add To Cart</button>
         </div>
         </div>
 
-        <div class="product">
+        <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="product">
           <div class="images">
-            <img src="img21.jpeg" alt="Flower Image" class="product-image" />
+            <img src="images/img21.jpeg" alt="Flower Image" class="product-image" />
           </div>
            <div class="product-info">
              <h2 class="product-name">Tulips Bouquet</h2>
@@ -233,18 +260,21 @@
              <button class="buy-now"
              data-name="Tulips Bouquet"
              data-price="1500" 
-             data-image="anniversary/img21.jpeg">Buy Now</button><br/>
+             data-image="../anniversary/images/img21.jpeg">Buy Now</button><br/>
              <button class="add-to-cart" 
              data-name="Tulips Bouquet"
              data-price="1500" 
-             data-image="anniversary/img21.jpeg">Add To Cart</button>
+             data-image="../anniversary/images/img21.jpeg">Add To Cart</button>
             </div>
      </div>
 
 
-      <div class="product">
+      <div 
+      data-aos="fade-up"
+        data-aos-duration="1000"
+        class="product">
         <div class="images">
-          <img src="img15.jpeg" alt="Flower Image" class="product-image" />
+          <img src="images/img15.jpeg" alt="Flower Image" class="product-image" />
         </div>
          <div class="product-info">
            <h2 class="product-name">Romantiqe Rose Bouquet</h2>
@@ -254,17 +284,20 @@
            <p class="product-price">Price:3000 LE </p>
            <button class="buy-now" data-name="Romantiqe Rose Bouquet"
            data-price="3000" 
-           data-image="anniversary/img15.jpeg">Buy Now</button><br/>
+           data-image="../anniversary/images/img15.jpeg">Buy Now</button><br/>
            <button class="add-to-cart" 
            data-name="Romantiqe Rose Bouquet"
            data-price="3000" 
-           data-image="anniversary/img15.jpeg">Add To Cart</button>
+           data-image="../anniversary/images/img15.jpeg">Add To Cart</button>
       </div>
       </div>
 
-        <div class="product">
+        <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+         class="product">
           <div class="images">
-            <img src="img7.jpeg" alt="Flower Image" class="product-image" />
+            <img src="images/img7.jpeg" alt="Flower Image" class="product-image" />
           </div>
           <div class="product-info">
             <h2 class="product-name">Mixed Pink Bouquet</h2>
@@ -275,17 +308,20 @@
             <button class="buy-now"
             data-name="Mixed Pink Bouquet"
               data-price="1750" 
-              data-image="anniversary/img7.jpeg">Buy Now</button><br/>
+              data-image="../anniversary/images/img7.jpeg">Buy Now</button><br/>
             <button class="add-to-cart" 
               data-name="Mixed Pink Bouquet"
               data-price="1750" 
-              data-image="anniversary/img7.jpeg">Add To Cart</button>
+              data-image="../anniversary/images/img7.jpeg">Add To Cart</button>
           </div>
         </div>
 
-        <div class="product">
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="product">
           <div class="images">
-            <img src="img8.jpeg" alt="Flower Image" class="product-image" />
+            <img src="images/img8.jpeg" alt="Flower Image" class="product-image" />
           </div>
           <div class="product-info">
             <h2 class="product-name">Bold Heart Bouquet</h2>
@@ -296,11 +332,11 @@
             <button class="buy-now"
             data-name="Bold Heart Bouquet"
               data-price="2000" 
-              data-image="anniversary/img8.jpeg">Buy Now</button><br/>
+              data-image="../anniversary/images/img8.jpeg">Buy Now</button><br/>
             <button class="add-to-cart" 
               data-name="Bold Heart Bouquet"
               data-price="2000" 
-              data-image="anniversary/img8.jpeg">Add To Cart</button>
+              data-image="../anniversary/images/img8.jpeg">Add To Cart</button>
           </div>
         </div>
 
@@ -308,19 +344,29 @@
 
   </div><!-- end full -->
 
-  <div class="footer">
+  <div id="footer">
     <div class="container">
         <p>We Are Social</p>
         <div class="Social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>  
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>  
         </div>
         <p class="copyright">&COPY; 2025 <span>"Western Flowers"</span> All Right Reserved</p>
-      </div>
+    </div>
 </div>
 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   function addToCart(product) {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -366,7 +412,7 @@
 
               addToCart(product);
               updateCartCount();  
-              window.location.href = "../cart.html"; 
+              window.location.href = "../cart/cart.html"; 
           });
       });
   });
@@ -393,7 +439,10 @@
             });  
         });  
     }
-    
+    AOS.init({
+  duration: 1000,
+    once: true     });
+
 </script>
 
 
